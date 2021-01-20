@@ -1,0 +1,19 @@
+.escala {
+    transition: all .2s ease-in-out;
+}
+
+.escala:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 575.98px) {
+    .escala {
+        transition: none;
+    }
+    .escala:hover {
+        transform: none;
+    }
+    #boton {
+        width: 100%;
+    }
+}

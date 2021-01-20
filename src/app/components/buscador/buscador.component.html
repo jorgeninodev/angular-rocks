@@ -1,0 +1,21 @@
+<div class=" m-3 row" *ngIf="bandas.length === 0">
+    <div class="col-md-12">
+        <div class="alert alert-secondary" role="alert">
+            <p class="text-center font-weight-bold">La banda que buscas no se encuentra :(</p>
+            <div class="row">
+                <button class=" mx-auto btn btn-outline-secondary" routerLink="/bandas">Regresar a Bandas</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class=" m-3 row row-cols-1 row-cols-md-2 ">
+    <div *ngFor="let banda of bandas" class="col mb-4 animate__animated animate__fadeIn animate__slower">
+        <div class="card">
+            <img [src]="banda.foto" class="card-img-top" alt="fot/{{banda.nombre}}">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{banda.nombre | uppercase}}</h5>
+                <a [routerLink]="['/detalle',banda.id]" class="btn btn-outline-secondary btn-block">Información de la banda</a>
+            </div>
+        </div>
+    </div>
+</div>
