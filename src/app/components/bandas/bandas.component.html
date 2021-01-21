@@ -4,7 +4,7 @@
             <img [src]="banda.foto" class="card-img-top" alt="foto/{{banda.nombre}}">
             <div class="card-body">
                 <h5 class="card-title text-center">{{banda.nombre | uppercase}}</h5>
-                <a [routerLink]="['/detalle',banda.id]" class="btn btn-outline-secondary btn-block">Información de la banda</a>
+                <a [routerLink]="['/detalle',banda.id]" class="btn btn-outline-secondary btn-block"> <i class="fa fa-info-circle mr-2" aria-hidden="true"></i> Información de la banda</a>
             </div>
         </div>
     </div>

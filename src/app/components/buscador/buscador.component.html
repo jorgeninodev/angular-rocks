@@ -3,7 +3,7 @@
         <div class="alert alert-secondary" role="alert">
             <p class="text-center font-weight-bold">La banda que buscas no se encuentra :(</p>
             <div class="row">
-                <button class=" mx-auto btn btn-outline-secondary" routerLink="/bandas">Regresar a Bandas</button>
+                <button class=" mx-auto btn btn-outline-secondary" routerLink="/bandas"> <i class="fas fa-arrow-left mr-2"></i>Regresar a Bandas</button>
             </div>
         </div>
     </div>
@@ -14,7 +14,7 @@
             <img [src]="banda.foto" class="card-img-top" alt="fot/{{banda.nombre}}">
             <div class="card-body">
                 <h5 class="card-title text-center">{{banda.nombre | uppercase}}</h5>
-                <a [routerLink]="['/detalle',banda.id]" class="btn btn-outline-secondary btn-block">Información de la banda</a>
+                <a [routerLink]="['/detalle',banda.id]" class="btn btn-outline-secondary btn-block"> <i class="fa fa-info-circle mr-2" aria-hidden="true"></i>Información de la banda</a>
             </div>
         </div>
     </div>
